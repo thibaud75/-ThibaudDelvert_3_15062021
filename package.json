@@ -1,0 +1,19 @@
+{
+  "name": "thibauddelvert_3_15062021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thibaud75/ThibaudDelvert_3_15062021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thibaud75/ThibaudDelvert_3_15062021/issues"
+  },
+  "homepage": "https://github.com/thibaud75/ThibaudDelvert_3_15062021#readme"
+}
