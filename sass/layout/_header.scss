@@ -1,0 +1,23 @@
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-family: "Shrikhand", sans-serif;
+    margin: 0;
+  }
+}
+
+.headerbis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    position: relative;
+    left: -40px;
+    i {
+      color: $color-black;
+    }
+  }
+}

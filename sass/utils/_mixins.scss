@@ -1,0 +1,22 @@
+//MIXINS POUR GERER LE RESPONSIVE
+
+// respond is the name of your mixin
+
+@mixin respond($breakpoint) {
+  // $breakpoint is simply a variable that can have several values
+
+  @if $breakpoint==tablet {
+    // here `laptop` is the value of $breakpoint
+    // when call laptop, we mean the following piece of code
+
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+}

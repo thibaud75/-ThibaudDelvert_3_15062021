@@ -1,0 +1,16 @@
+// COULEURS
+
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;
+$color-main: #fff;
+$color-research: #eaeaea;
+$color-body: #f6f6f6;
+$color-black: #000;
+
+// DARKEN
+
+$darken-research: darken($color-research, 15%);
+$darken-body: darken($color-body, 15%);
+$darken-tertiary: darken($color-tertiary, 50%);
+$darken-main: darken($color-main, 25%);

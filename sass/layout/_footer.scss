@@ -1,0 +1,36 @@
+.footer {
+  background-color: #353535;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #fff;
+  h2 {
+    font-size: 1.3rem;
+    font-family: Shrikhand;
+    margin: 0;
+  }
+  .links {
+    list-style-type: none;
+    padding: 0;
+    li {
+      margin-bottom: 10px;
+      a {
+        text-decoration: none;
+        color: #fff;
+
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY POUR TABLETTE 768 PX */
+
+@include respond(tablet) {
+  footer {
+    text-align: center;
+  }
+}
