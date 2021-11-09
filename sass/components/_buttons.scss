@@ -1,11 +1,40 @@
 .button {
-  background-color: $color-secondary;
+  background-image: linear-gradient(0deg, $color-primary, $color-secondary);
   color: $color-main;
   border-radius: 20px;
   padding: 20px;
   border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: opacity 0.5s;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.25);
+
   &:hover {
-    background-color: #000;
-    color: $color-main;
+    content: " ";
+    position: relative;
+    inset: 0;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+    opacity: 0.85;
   }
+}
+
+.fa-heart {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  // padding: 0;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // inset: 0;
+  cursor: pointer;
+  // position: relative;
+  // background-color: black;
+  &:hover::before {
+  }
+}
+.fa-heart:hover .full {
+  opacity: 0;
 }
