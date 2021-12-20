@@ -19,22 +19,39 @@
   }
 }
 
+// .fa-heart {
+//   height: 2rem;
+//   width: 2rem;
+//   background-color: transparent;
+//   border: transparent 0px solid;
+//   // padding: 0;
+//   // display: flex;
+//   // align-items: center;
+//   // justify-content: center;
+//   // inset: 0;
+//   cursor: pointer;
+//   // position: relative;
+//   // background-color: black;
+//   &:hover::before {
+//   }
+// }
+// .fa-heart:hover .full {
+//   opacity: 0;
+// }
+
 .fa-heart {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
-  // padding: 0;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // inset: 0;
-  cursor: pointer;
-  // position: relative;
-  // background-color: black;
-  &:hover::before {
-  }
+  color: $color-body;
+  text-shadow: 0 0 4px $color-black;
+  background-color: $color-body;
+  border-radius: 50%;
+  padding: 0.2em;
 }
-.fa-heart:hover .full {
-  opacity: 0;
+.fa-heart::before {
+  content: "\f004";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+.fa-heart:hover::before {
+  color: $color-primary;
+  cursor: pointer;
 }

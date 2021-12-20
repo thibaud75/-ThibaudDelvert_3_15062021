@@ -66,6 +66,10 @@ body {
       text-decoration: none;
       color: $color-black;
     }
+    i {
+      width: 25px;
+      margin-right: 20px;
+    }
     span {
       position: relative;
       right: 2rem;
@@ -84,6 +88,9 @@ body {
       // @include respond(desktop) {
       //   left: 315px;
       // }
+    }
+    &:hover {
+      background: $color-red;
     }
   }
 }
@@ -143,6 +150,8 @@ body {
       .heart {
         position: relative;
         margin-left: 15px;
+        display: flex;
+        flex-direction: column;
         @include respond(tablet) {
           text-align: center;
         }
@@ -155,11 +164,14 @@ body {
         i {
           position: absolute;
         }
-        .full {
-          font-weight: 500;
-          // background-color: $color-main;
-        }
       }
     }
   }
+}
+.heart--full {
+  font-weight: 500;
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  // background-color: $color-main;
 }
