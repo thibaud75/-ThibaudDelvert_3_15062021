@@ -62,6 +62,9 @@
         @include respond(desktop) {
           top: 3rem;
         }
+        @include respond(big) {
+          top: 4.3rem;
+        }
       }
     }
   }
