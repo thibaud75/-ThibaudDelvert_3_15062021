@@ -54,17 +54,17 @@
         }
       }
       .heart--full {
-        top: 1.3rem;
-        right: 2rem;
-        @include respond(tablet) {
-          top: 2.2rem;
-        }
-        @include respond(desktop) {
-          top: 3rem;
-        }
-        @include respond(big) {
-          top: 4.3rem;
-        }
+        bottom: 1rem;
+        right: 1rem;
+        // @include respond(tablet) {
+        //   top: 2.2rem;
+        // }
+        // @include respond(desktop) {
+        //   top: 3rem;
+        // }
+        // @include respond(big) {
+        //   top: 4.3rem;
+        // }
       }
     }
   }
