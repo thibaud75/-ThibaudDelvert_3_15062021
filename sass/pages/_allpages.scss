@@ -46,10 +46,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
       h2 {
         font-family: "Shrikhand", sans-serif;
         @include respond(tablet) {
           margin: 5% auto;
+        }
+      }
+      .heart--full {
+        top: 1.3rem;
+        right: 2rem;
+        @include respond(tablet) {
+          top: 2.2rem;
+        }
+        @include respond(desktop) {
+          top: 3rem;
         }
       }
     }
@@ -84,13 +95,16 @@
     }
     &:hover .selection--hover {
       width: 15%;
+      i {
+        animation: lds-ring 0.5s cubic-bezier(0.5, 0, 0.5, 1) backwards;
+      }
     }
     &:hover .selection--menu {
       width: 70%;
     }
     a {
       & > * {
-        transition: width 1s ease-in-out;
+        transition: width 0.5s ease-in-out;
       }
       .selection--menu {
         padding: 2% 4%;
@@ -123,6 +137,7 @@
       .selection--hover {
         background-color: $color-tertiary;
         // width: 100%;
+        color: $color-main;
         display: flex;
         align-items: center;
         justify-content: center;

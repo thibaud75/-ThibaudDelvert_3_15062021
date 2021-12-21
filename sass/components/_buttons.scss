@@ -20,8 +20,6 @@
 }
 
 // .fa-heart {
-//   height: 2rem;
-//   width: 2rem;
 //   background-color: transparent;
 //   border: transparent 0px solid;
 //   // padding: 0;
@@ -39,19 +37,43 @@
 //   opacity: 0;
 // }
 
-.fa-heart {
-  color: $color-body;
-  text-shadow: 0 0 4px $color-black;
-  background-color: $color-body;
-  border-radius: 50%;
-  padding: 0.2em;
-}
-.fa-heart::before {
-  content: "\f004";
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-.fa-heart:hover::before {
-  color: $color-primary;
-  cursor: pointer;
+.heart--full {
+  .fa-heart {
+    position: absolute;
+    inset: 0;
+    padding: 0.2em;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .fas.fa-heart {
+    opacity: 0;
+  }
+  .far.fa-heart {
+    color: $color-black;
+    // text-shadow: 0 0 -4px $color-black;
+    // border-radius: 50%;
+  }
+
+  &:hover {
+    .far.fa-heart {
+      opacity: 0;
+    }
+    .fas.fa-heart {
+      // color: $color-primary;
+
+      // display: initial;
+      // cursor: pointer;
+      opacity: 1;
+      &::before {
+        background: linear-gradient(
+          180deg,
+          $color-primary 0%,
+          $color-secondary 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
 }
